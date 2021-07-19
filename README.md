@@ -15,7 +15,7 @@
 ## Index
 
 1. [Dataset](https://github.com/kdragonkorea/sql_analysis_study/tree/main/00_dataset)
-2. 2장_SQL 문법 (SELECT, WHERE, etc)
+2. [2장_SQL 문법 (SELECT, WHERE, etc)](https://github.com/kdragonkorea/sql_analysis_study/tree/main/01_2%EC%9E%A5_SQL%20%EB%AC%B8%EB%B2%95)
 3. 3장_데이터 추가, 삭제, 갱신, 데이터 정합성
 4. 4장_자동차 매출 데이터를 이용한 리포트 작성
 5. 5장_상품 리뷰 데이터를 이용한 리포트 작성
