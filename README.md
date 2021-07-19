@@ -264,50 +264,67 @@
 
    - LEFT JOIN
 
-     - syntax
+     - syntax: `특정 테이블 정보를 기준으로 타 테이블을 결합`
 
        ```sql
-       
+       SELECT 호출하려는 컬럼명
+       FROM TABLE_A
+       LEFT JOIN TABLE_B
+       ON TABLE_A.column1 = TABLE_B.column2
        ```
 
-     - exam1
+     - exam1: classicmodels.customers, classicmodels.orders 테이블을 결합하고 ORDERNUMBER와 COUNTRY를 출력하세요.
 
        ```sql
+       select ordernumber, country
+       from classicmodels.orders
+       left join classicmodels.customers
+       on orders.customernumber = customers.customernumber;
        ```
 
-       
+     - exam2: classicmodels.customers, classicmodels.orders 테이블을 이용해 USA 거주자의 주문 번호(OrderNumber), 국가(Country)를 출력하세요.
+
+       ```sql
+       select ordernumber, country
+       from classicmodels.customers
+       left join classicmodels.orders
+       on orders.customernumber = customers.customernumber
+       where country = 'usa';
+       ```
 
    - INNER JOIN
 
-     - syntax
+     - syntax: `2가지 테이블에 공통으로 존재하는 정보만 출력`
 
        ```sql
-       
+       SELECT 호출하려는 컬럼명
+       FROM TABLE_A
+       INNER JOIN TABLE_B
+       ON TABLE_A.column1 = TABLE_B.column2
        ```
 
-     - exam1
+     - exam1: classicmodels.customers, classicmodels.orders 테이블을 이용해 USA 거주자의 주문 번호(OrderNumber), 국가(Country)를 출력하세요.
 
        ```sql
-       
+       select orderNumber, country
+       from classicmodels.customers
+       inner join classicmodels.orders
+       on customers.customernumber = orders.customerNumber
+       where country = 'usa';
        ```
-
        
 
    - FULL JOIN
 
-     - syntax
+     - syntax: `TABLE_A 또는 TABLE_B 와 매칭되는 레코드를 모두 출력`
 
        ```sql
-       
+       SELECT 호출하려는 컬럼명
+       FROM TABLE_A
+       FULL JOIN TABLE_B
+       ON TABLE_A.column1 = TABLE_B.column2
        ```
-
-     - exam1
-
-       ```sql
-       
-       ```
-
-       
+     
 
 6. CASE WHEN
 
