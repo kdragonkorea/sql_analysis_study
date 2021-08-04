@@ -1,5 +1,5 @@
 # SQL Study
-- 교제명: `SQL로 맛보는 데이터 전처리 분석`
+- 교제명: [SQL로 맛보는 데이터 전처리 분석](https://book.naver.com/bookdb/book_detail.nhn?bid=16214392)
 - 학습기간: 2021-07
 - 학습목적: SQL 기초 문법에 대한 이해와 실무에서 적용할 수 있는 분석 사례 학습
 - 학습목표: SQL 문법 숙지, SQLD 자격증 취득
