@@ -216,7 +216,7 @@
     where reportsTo is null;
     ```
 
-- LIKE '%TEXT%'
+- LIKE '%`포함어`%'
 
   - syntax: 어떤 텍스트가 포함되는 경우를 출력할 때
 
