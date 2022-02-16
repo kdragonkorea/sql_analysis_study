@@ -7,9 +7,9 @@
 - 매출액 (일자별, 월별, 연도별)
 
   ```sql
-select orderDate, priceEach*quantityOrdered
-from classicmodels.orderdetails
-left join classicmodels.orders on orders.orderNumber = orderdetails.orderNumber;  
+  select orderDate, priceEach*quantityOrdered
+  from classicmodels.orderdetails
+  left join classicmodels.orders on orders.orderNumber = orderdetails.orderNumber;  
   ```
   
 - 구매자 수, 구매 건수 (일자별, 월별, 연도별)
